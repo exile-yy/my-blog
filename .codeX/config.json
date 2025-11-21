@@ -1,0 +1,37 @@
+﻿{
+  "name": "my-blog",
+  "description": "A personal blog built with Next.js, TypeScript, and Markdown content.",
+  "projectType": "nextjs",
+  "language": "typescript",
+  "root": "./",
+  "entry": "app/page.tsx",
+  "include": [
+    "app/**/*",
+    "components/**/*",
+    "lib/**/*",
+    "content/**/*",
+    "styles/**/*",
+    "next.config.js",
+    "tsconfig.json"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    ".git",
+    "public",
+    "README.md"
+  ],
+  "framework": {
+    "name": "next",
+    "version": "13+",
+    "features": ["app-router", "server-components", "typescript"]
+  },
+  "markdown": {
+    "enabled": true,
+    "directory": "content",
+    "extensions": [".md", ".mdx"]
+  },
+  "aliases": {
+    "@": "./"
+  }
+}
